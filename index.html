@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <div class="main-container">
         <div class="sidebar">
             <div class="menu">
                 <img src="" alt="">
@@ -51,24 +52,40 @@
             </div>
         </div>
         <div class="header">
-            <div class="search-container">
-                <label for="searchbar"><img src="" alt=""></label>
-                <input type="search" name="searchbar" id="searchbar">
-            </div>
+            <div class="top">
+                <div class="search-container">
+                    <label for="searchbar"><img src="" alt=""></label>
+                    <input type="search" name="searchbar" id="searchbar">
+                </div>
 
-            <div class="alarm">
-                <a href=""><img src="" alt=""></a>
+                <div class="alarm">
+                    <a href=""><img src="" alt=""></a>
+                </div>
+            </div>
+            
+            <div class="bottom">
+                <div class="buttons">
+                    <button class="new">new</button>
+                    <button class="upload">upload</button>
+                    <button class="share">share</button>
+                </div>
             </div>
         </div>
         <div class="main">
             <div class="projects">
-
+                <h2>Your Projects</h2>
             </div>
             <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="container">
 
+                </div>
             </div>
             <div class="trending">
-                
+                <h2>Trending</h2>
+                <div class="container">
+
+                </div>
             </div>
         </div>
     </div>
