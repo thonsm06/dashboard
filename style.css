@@ -6,18 +6,14 @@ body {
     background-color: lightgray;
     height: 100%;
     display: grid;
-    /* grid-template-columns: 1fr 5fr; */
-    /* grid-template-rows: 1fr 5fr; */
     grid-template-areas: 
     "sidebar header header header"
     "sidebar projects projects announcements"
     "sidebar projects projects trending";
-    gap: 1rem;
+    
 }
 .sidebar {
     background-color: skyblue;
-    /* grid-column: 1 / 2;
-    grid-row: 1 / 3; */
     grid-area: sidebar;
 }
 .sidebar div a {
@@ -42,23 +38,14 @@ body {
     padding: 8px 16px;
     border-radius: 16px;
 }
-/* .main {
-    background-color: lightgray;
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 20px;
-} */
+
 .projects {
     grid-area: projects;
-    
-    /* grid-column: 1 / 2;
-    grid-row: 1 / 3; */
+    margin: 1rem auto;
 }
 .cards-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmaX(200px, 20%));
     gap: 1rem;
 }
 .cards-container > [class *= "card"] {
@@ -74,6 +61,7 @@ body {
 
 .announcements {
     grid-area: announcements;
+    margin: 1rem;
 }
 .announcements .container {
     background-color: white;
@@ -84,6 +72,7 @@ body {
 
 .trending {
     grid-area: trending;
+    margin: 1rem;
 }
 .trending .container{
     background-color: white;
